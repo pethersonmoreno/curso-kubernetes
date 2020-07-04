@@ -2,7 +2,7 @@
 
 $host = "banco_mysql";
 $usuario = "root";
-$senha = "q1w2e3r4";
+$senha = "root";
 $banco = "empresa";
 
 ?>

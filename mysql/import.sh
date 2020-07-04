@@ -1,5 +1,4 @@
 #!/bin/bash
+mysql -u root -proot empresa < empresa_noticias.sql
 
-mysql -u root -pq1w2e3r4 empresa < empresa_noticias.sql
-
-mysql -u root -pq1w2e3r4 empresa < empresa_usuario.sql
+mysql -u root -proot empresa < empresa_usuario.sql
