@@ -18,6 +18,10 @@ spec:
           image: pethersonmoreno/noticias-alura:v1-sistema
           ports:
             - containerPort: 80
+          lifecycle:
+            postStart:
+              exec:
+                command: ["curl", "-X", "POST", "-H", "Content-type: application/json", "--data" ,"{\"text\":\"Olá, um novo pod acabou de ser criado!\"}", "urlwebhook-slack"]
           volumeMounts:
             - name: imagens
               mountPath: /var/www/html/uploads
