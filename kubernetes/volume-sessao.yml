@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: volume-sessao
+spec:
+  storageClassName: standard
+  volumeMode: Filesystem
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/tmp/volume-sessao"
+    type: DirectoryOrCreate
